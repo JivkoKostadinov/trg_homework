@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Poetry
+poetry.lock
+
+# Pytest
+.pytest_cache/
+.cache/
+
+# Playwright
+test-results/
+playwright-report/
+
+# Test artifacts
+output/
+
+# OS
+.DS_Store
+
+# Text editor
+.vscode
+pyrightconfig.json
+
+# Type checking
+.mypy_cache

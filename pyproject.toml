@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "trg_autotests"
+version = "0.1.0"
+authors = ["zhivko.kostadinov"]
+description = "homework task"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^9.0.2"
+pytest-playwright = "^0.7.0"
+pytest-base-url = "^2.1.0"
+pre-commit = "^4.5.1"
+pytest-xdist = "^3.8.0"
+playwright = "^1.58.0"
+black = "^25.1.0"
+isort = "^5.13.2"
+flake8 = "^7.2.0"
+pylint = "^3.3.6"
+mypy = "^1.15.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.12"
+strict = false
+ignore_missing_imports = true
+disallow_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+
+[tool.pylint.main]
+py-version = "3.12"
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint."messages control"]
+disable = ["C0114", "C0115", "C0116"]
+
