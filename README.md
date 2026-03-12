@@ -100,8 +100,8 @@ make typecheck     # run mypy only
 ### Artifacts
 
 ```bash
-pytest --screenshot=only-on-failure  # capture screenshots on failure
-pytest --video=retain-on-failure     # record video
+make test-screenshots  # capture screenshots on failure
+make test-video        # record video
 ```
 
 Results are saved to `test-results/` by default.
@@ -109,5 +109,5 @@ Results are saved to `test-results/` by default.
 ### Parallel execution
 
 ```bash
-pytest --browser chromium --browser firefox -n 2
+make test-parallel
 ```
